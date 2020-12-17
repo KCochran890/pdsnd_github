@@ -1,15 +1,14 @@
-### Date created
-Include the date you created this project and README file.
+README: 12/17/2020; Bikeshare: 10/14/2020
 
-### Project Title
-Replace the Project Title
+Bikeshare
 
-### Description
-Describe what your project is about and what it does
 
-### Files used
-Include the files used
+The user inputs their choice of cities, Chicago, New York, or Washington
+and accesses the database for their bikeshare programs. You can review many different
+statistics from each city or compair the cities.
 
-### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
+bikeshare.py
+
+
+Credits: Udacity: Programming for Data Science with Python Nano Degree
 
