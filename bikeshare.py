@@ -36,7 +36,7 @@ def get_filters():
     while day not in DAY_OF_WEEK:
         print('Please input the day of the week you would like to review: ')
         day = input().lower()
-    print('You have chosen: ' + day.title()+ '.')          
+    print('You have chosen: {}.'.format(day.title()))
    
     
     print('-'*40)
@@ -96,7 +96,7 @@ def load_data(city, month, day):
 
 
 def station_stats(df):
-    """Displays statistics on the most popular stations and trip."""
+    """Displays statistics on the most popular stations and trip from user input."""
 
     print('\nPlease wait!!! Calculating The Most Popular Stations and Trip...\n')
     start_time = time.time()
@@ -104,12 +104,12 @@ def station_stats(df):
     # TO DO: display most commonly used start station
     common_starting_location = df['Start Station'].mode()[0]
 
-    print("The most commonly used start station: " + common_starting_location)
+    print("The most commonly used start station in your chosen city: " + common_starting_location)
 
     # TO DO: display most commonly used end station
     common_ending_location = df['End Station'].mode()[0]
 
-    print("The most commonly used end station: " + common_ending_location)
+    print("The most commonly used end station in your chosen city: " + common_ending_location)
 
     # TO DO: display most frequent combination of start station and end station trip
     df['Start To End'] = df['Start Station'].str.cat(df['End Station'], sep=' to ')
@@ -122,7 +122,7 @@ def station_stats(df):
 
 
 def trip_duration_stats(df):
-    """Displays statistics on the total and average trip duration."""
+    """Displays statistics on the total and average trip duration from user input."""
 
     print('\nCalculating Trip Duration...\n')
     start_time = time.time()
