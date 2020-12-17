@@ -28,7 +28,7 @@ def get_filters():
     while month not in MONTHS:
         print("Please input the month you would like to review.")
         month = input().lower()
-    print('Hello! You have chosen: ' + month.title() + '.')
+    print('Hello! You have chosen: {}.'.format(month.title())')
 
     # TO DO: get user input for day of week (all, monday, tuesday, ... sunday)
     DAY_OF_WEEK = ['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday']
