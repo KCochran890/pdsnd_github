@@ -96,7 +96,7 @@ def load_data(city, month, day):
 
 
 def station_stats(df):
-    """Displays statistics on the most popular stations and trip."""
+    """Displays statistics on the most popular stations and trip from user input."""
 
     print('\nPlease wait!!! Calculating The Most Popular Stations and Trip...\n')
     start_time = time.time()
@@ -122,7 +122,7 @@ def station_stats(df):
 
 
 def trip_duration_stats(df):
-    """Displays statistics on the total and average trip duration."""
+    """Displays statistics on the total and average trip duration from user input."""
 
     print('\nCalculating Trip Duration...\n')
     start_time = time.time()
